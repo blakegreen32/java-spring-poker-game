@@ -1,0 +1,90 @@
+<!doctype html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Poker</title>
+    <meta name="description" content="Texas Hold Em">
+    <link rel="stylesheet" href="../css/common.css" />
+</head>
+
+<body>
+<div class="bg">
+    <img src="../static/images/poker-table-background.jpg" th:src="@{images/poker-table-background.jpg}" />
+</div>
+
+<div class="chips">
+    <img src="../static/images/poker-chips.png" th:src="@{images/poker-chips.png}" />
+</div>
+
+<div class="tableCards">
+    <img th:src="@{${'images/cards/' + flopCard1}}" />
+    <img th:src="@{${'images/cards/' + flopCard2}}" />
+    <img th:src="@{${'images/cards/' + flopCard3}}" />
+    <img th:src="@{${'images/cards/' + fourthStreet}}" />
+    <img th:src="@{${'images/cards/' + river}}" />
+</div>
+
+<div class="playerCards">
+    <img th:src="@{${'images/cards/' + playerCard1}}" />
+    <img th:src="@{${'images/cards/' + playerCard2}}" />
+</div>
+
+<div class="potInfo">
+    <label>Pot: $</label>
+    <span th:text="${pot}"></span>
+</div>
+
+<div class="playerInfo">
+    <label>Your balance: $</label>
+    <span th:text="${playerBalance}"></span>
+</div>
+
+<div class="computerInfo">
+    <label>Opponent's balance: $</label>
+    <span th:text="${computerBalance}"></span>
+</div>
+
+<div class="message">
+    <span th:text="${message}"></span>
+</div>
+
+<form action="#" th:action="@{/jspPlayAgain}" method="get">
+    <input class="button playAgain" type="submit" value="Play again"/>
+</form>
+
+<form action="#" th:action="@{/jspOpponentTurn}" method="get">
+    <input class="button endTurn" type="submit" value="End turn"/>
+</form>
+
+<form action="#" th:action="@{/jspFold}" method="get">
+    <input class="button fold" type="submit" value="Fold"/>
+</form>
+
+<form action="#" th:action="@{/jspBet}" method="get">
+    <input class="button bet" type="submit" value="Bet"/>
+    <input class="betInput" type="number" th:id="amount" th:name="amount" name="amount" placeholder="" step="1" value="0">
+</form>
+
+<form action="#" th:action="@{/jspRaise}" method="get">
+    <input class="button raise" type="submit" value="Raise"/>
+    <input class="raiseInput" type="number" th:id="amount" th:name="amount" name="amount" placeholder="" step="1" value="0">
+</form>
+
+<form action="#" th:action="@{/jspCheck}" method="get">
+    <input class="button check" type="submit" value="Check"/>
+</form>
+
+<form action="#" th:action="@{/jspCall}" method="get">
+    <input class="button call" type="submit" value="Call"/>
+</form>
+
+<form action="#" th:action="@{/jspPause}" method="get">
+    <input class="button pause" type="submit" value="Pause"/>
+</form>
+
+</body>
+
+</html>

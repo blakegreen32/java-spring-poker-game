@@ -1,0 +1,179 @@
+body, html {
+ height: 100%;
+}
+
+.bg img {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  margin: auto;
+  overflow: auto;
+  position: fixed;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.chips img {
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -35px;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  z-index: 1;
+}
+
+.logo img {
+  top: 20%;
+  left: 50%;
+  margin-left: -150px;
+  position: fixed;
+  z-index: 1;
+}
+
+.button {
+  width: 150px;
+  height: 30px;
+  position: fixed;
+  z-index: 1;
+  cursor: pointer;
+  color: white;
+  background: red;
+}
+
+.play {
+  left: 50%;
+  top: 70%;
+  margin-left: -75px;
+}
+
+.playAgain {
+  left: 2%;
+  top: 40%;
+}
+
+.endTurn {
+  left: 2%;
+  top: 45%;
+}
+
+.fold {
+  left: 2%;
+  top: 50%;
+}
+
+.bet {
+  left: 2%;
+  top: 55%;
+}
+
+.betInput {
+  left: 13%;
+  top: 55%;
+  position: fixed;
+  width: 75px;
+  height: 23px;
+  z-index: 1;
+  color: black;
+  background: white;
+}
+
+.raise {
+  left: 2%;
+  top: 60%;
+}
+
+.raiseInput {
+   left: 13%;
+   top: 60%;
+   position: fixed;
+   width: 75px;
+   height: 23px;
+   z-index: 1;
+   color: black;
+   background: white;
+}
+
+.check {
+  left: 2%;
+  top: 65%;
+}
+
+.call {
+  left: 2%;
+  top: 70%;
+}
+
+.pause {
+  left: 2%;
+  top: 90%;
+}
+
+.tableCards {
+  left: 50%;
+  top: 25%;
+  margin-left: -195.5px;
+  position: fixed;
+  z-index: 1;
+}
+
+.tableCards img {
+  width: 75px;
+}
+
+.playerCards {
+  left: 50%;
+  top: 70%;
+  margin-left: -77px;
+  position: fixed;
+  z-index: 1;
+}
+
+.playerCards img {
+  width: 75px;
+}
+
+.message {
+  width: 350px;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  margin-left: -175px;
+  font-size: 25px;
+  color: white;
+  z-index: 1;
+  text-align: center;
+}
+
+.potInfo {
+  top: 62%;
+  left: 50%;
+  margin-left: -38px;
+  font-size: 20px;
+  color: white;
+  position: fixed;
+  z-index: 1;
+}
+
+.playerInfo {
+  top: 5%;
+  left: 2%;
+  font-size: 20px;
+  color: white;
+  position: fixed;
+  z-index: 1;
+}
+
+.computerInfo {
+  top: 10%;
+  left: 2%;
+  font-size: 20px;
+  color: white;
+  position: fixed;
+  z-index: 1;
+}
+
