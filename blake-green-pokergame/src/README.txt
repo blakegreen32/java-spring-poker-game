@@ -1,4 +1,4 @@
-POKERSTARS INTERVIEW ASSIGNMENT: POKER GAME BY BLAKE GREEN
+JAVA SPRING POKER GAME BY BLAKE GREEN
 
 BUILD INSTRUCTIONS:
 
@@ -12,7 +12,7 @@ BUILD INSTRUCTIONS:
 - This should start building the SpringApplication and you will be able to hit localhost:8080 in your browser
   to test the game.
 
-- When playing the game make sure to hit "End Turn" when you done making
+- When playing the game make sure to hit "End Turn" when you're done making
   your turn in order to trigger the computers move.
 
 - I hope you like the UI/UX. I spent a lot of time making it look and feel like a real poker game :)
